@@ -14,4 +14,5 @@ class MDNSDiscovery():
   def run(self, wait_time: int) -> []:
     browser = ServiceBrowser(self.zeroconf, "_http._tcp.local.", self.listener)
     time.sleep(wait_time)
+    self.zeroconf.close()
     return self.services

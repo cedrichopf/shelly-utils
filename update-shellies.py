@@ -1,11 +1,11 @@
 from shelly.discovery.mdns import MDNSDiscovery
 from shelly.shelly import Shelly
 
-WAIT_TIME = 10
+WAIT_TIME = 20
 
 def main():
   discovery = MDNSDiscovery()
-  print('Fetching Shelly devices')
+  print(f'Fetching Shelly devices for {WAIT_TIME} seconds')
   shellies: [] = discovery.run(WAIT_TIME)
   print(f'Found {len(shellies)} Shelly devices')
   update_counter = 0
