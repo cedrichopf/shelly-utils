@@ -5,6 +5,7 @@
   - [Discovery](#discovery)
   - [Scripts](#scripts)
     - [Update Shellies](#update-shellies)
+    - [Reboot Shellies](#reboot-shellies)
   - [Known Issues](#known-issues)
   - [Resources](#resources)
 
@@ -38,6 +39,14 @@ This script will check if there is an update available for any Shelly device and
 
 ```sh
 $ python3 update-shellies.py
+```
+
+### Reboot Shellies
+
+This script will reboot all discovered Shelly devices:
+
+```sh
+$ python3 reboot-shellies.py
 ```
 
 ## Known Issues

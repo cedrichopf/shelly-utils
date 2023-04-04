@@ -24,3 +24,7 @@ class Shelly():
   def update_device(self) -> None:
     url = f'{self.protocol}://{self.address}/rpc'
     response = requests.post(url, json={"id":1,"method":"Shelly.Update", "params":{"stage":"stable"}})
+
+  def reboot(self) -> None:
+    url = f'{self.protocol}://{self.address}/rpc/Shelly.Reboot'
+    response = requests.get(url)
