@@ -12,7 +12,7 @@ def main():
   for shelly in shellies:
     print(f'Rebooting Shelly {shelly.name}')
     shelly.reboot()
-  print(f'Triggered update for {len(shellies)} Shelly devices')
+  print(f'Triggered reboot for {len(shellies)} Shelly devices')
   pass
 
 main()
